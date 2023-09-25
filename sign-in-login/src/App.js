@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="App" >
-      {/* <div className ="wrapper">
+      <div className ="wrapper">
        
         <div className="box"> 
             <div></div>
@@ -150,7 +150,7 @@ function App() {
             <div></div>
             <div></div>
         </div>
-    </div> */}
+    </div> 
       {loggedIn ? (
         <div>
           <h2>Welcome, User!</h2>
@@ -166,15 +166,15 @@ function App() {
           )}
         </div>
       ) : (
-        <div className='heading'>
-          <h1>e-Vault for legal records</h1>
+       <div className='heading'>
+          <h1 className="head">e-Vault for legal records</h1>
           <h2>Sign In</h2>
-          <div className='label'><label>Email:</label>
+          <div className='label'><label>Email:</label><br></br>
             <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
             <br />
-            <label>Password:</label>
+            <label>Password:</label><br></br>
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-            <br />
+            <br /><br/>
             <input type="file" onChange={handleFileChange} />
             <br />
             <button onClick={handleLogin}>Upload</button>
