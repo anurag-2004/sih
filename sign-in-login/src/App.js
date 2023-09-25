@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="App" >
-    <div className ="wrapper">
+      {/* <div className ="wrapper">
        
         <div className="box"> 
             <div></div>
@@ -150,7 +150,7 @@ function App() {
             <div></div>
             <div></div>
         </div>
-    </div>
+    </div> */}
       {loggedIn ? (
         <div>
           <h2>Welcome, User!</h2>
